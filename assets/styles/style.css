@@ -1,0 +1,57 @@
+.main {
+  width: 100vw;
+  height: 100%;
+}
+
+.get-ready-section {
+  position: relative;
+}
+.model-2.layer-1 {
+  position: absolute;
+  bottom: 35%;
+  right: 0;
+  z-index: 0;
+}
+.model-2.layer-2 {
+  position: absolute;
+  bottom: 37%;
+  right: 0;
+  z-index: 1;
+}
+.get-ready-section span {
+  position: absolute;
+  top: -6.5%;
+  left: 22%;
+  z-index: 2;
+}
+
+.when-section {
+  position: relative;
+}
+.smoke {
+  width: 22%;
+  position: absolute;
+  top: -10.4%;
+  right: 17%;
+}
+.model-3.layer-1 {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  left: -1%;
+  z-index: 0;
+}
+.model-3.layer-2 {
+  position: absolute;
+  top: 56.5%;
+  right: 0;
+  left: -2%;
+  z-index: 1;
+}
+.when-section span {
+  position: absolute;
+  top: 89%;
+  left: 32%;
+  right: 10%;
+  z-index: 2;
+}
