@@ -5,6 +5,7 @@
 
 :root {
   --main-yellow: #ffff00;
+  --main-purple: #8F39FB;
 }
 
 body {
@@ -12,6 +13,8 @@ body {
   background-color: black;
   font-family: "Rubik", sans-serif;
   color: var(--main-yellow);
+  overflow-x: hidden;
+  font-size: 16px;
 }
 
 img {

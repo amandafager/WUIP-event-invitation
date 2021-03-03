@@ -18,11 +18,37 @@
   right: 0;
   z-index: 1;
 }
-.get-ready-section span {
+
+.model-2 {
+  /*animation: move 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);*/
+}
+
+@keyframes move {
+  to {
+    transform: translateY(20%);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.get-ready-section p {
   position: absolute;
   top: -6.5%;
   left: 22%;
   z-index: 2;
+  /*animation: slideInFromLeft 0.5s linear 1;
+  animation-play-state: paused;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation-delay: calc(var(--scroll) * -2s);*/
 }
 
 .when-section {
@@ -48,10 +74,21 @@
   left: -2%;
   z-index: 1;
 }
-.when-section span {
+.when-section p {
   position: absolute;
   top: 89%;
   left: 32%;
   right: 10%;
   z-index: 2;
+}
+
+
+.count-me-in-section {
+  position: relative;
+}
+.count-me-in-text {
+  width: 40%;
+  position: absolute;
+  top: 22.5%;
+  left: 7%;
 }
