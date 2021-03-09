@@ -1,0 +1,55 @@
+
+.blob-1.layer-1 {
+    position: absolute;
+    top: -30%;
+    right: 0;
+  }
+.blob-1.layer-2 {
+    position: absolute;
+    top: -28%;
+    right: 0;
+}
+
+.smoke-blobs {
+    width: 29%;
+    position: absolute;
+    bottom: 75%;
+    right: 8%;
+    z-index: 2;
+}
+
+.blob-2.layer-1 {
+    position: absolute;
+    top: 74%;
+    right: 0;
+    z-index: 0;
+}
+.blob-2.layer-2 {
+    position: absolute;
+    top: 76%;
+    right: 0;
+    z-index: 1;
+}
+
+.blob-3 {
+    position: absolute;
+    bottom: -60%;
+}
+
+
+@media (max-width: 340px) {
+
+    .blob-3.layer-1 {
+        width: 100%;
+        height: calc(100% + 3.2rem);
+    }
+    .blob-3.layer-2 {
+        width: 100%;
+        height: calc(100% + 1rem);
+    
+    }   
+}
+
+
+
+

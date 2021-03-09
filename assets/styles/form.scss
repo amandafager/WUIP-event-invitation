@@ -1,0 +1,92 @@
+
+.content-3 {
+    position: absolute;
+    color: var(--main-yellow);
+    bottom: -50%;
+
+    .sign-up {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;  
+        
+            label {
+              padding: 0.4rem;
+              letter-spacing: 0.1rem;
+              @media (max-width: 300px) {
+                font-size: 12px;
+              }
+              
+            }
+        
+            input {
+              padding: 0.5rem;
+              background-color: transparent;
+              outline: 0;
+              border: 0;
+              letter-spacing: 0.1rem;
+              @media (max-width: 300px) {
+                font-size: 12px;
+              }
+              
+              &::placeholder {
+                color: transparent;
+                transition: color 0.3s ease;
+          
+              }
+              &:focus, &:active {
+                &::placeholder {
+                  color: rgb(255, 255, 255);
+                }
+              }
+            
+            }
+            .stroke {
+                width: 100%;
+                height: 5px;
+                background-color: var(--main-yellow);
+                border-radius: 1rem;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+            }
+        }  
+    }
+}
+
+
+  .blob-button {
+    background-image: url("../svgs/button.svg");
+    background-color: transparent;
+    outline: none;
+    background-size: cover;
+    width: 10rem;
+    height: 5rem;
+    color: var(--main-purple);
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    margin-top: 1rem;
+    transition: all 0.5s ease;
+    
+    /*background: var(--main-yellow);
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;*/
+
+    &:hover{
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: translateY(1rem);
+      /*filter: saturate(150%);*/
+   
+    }
+  }
+  
+ 
+  
+  

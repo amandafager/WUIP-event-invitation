@@ -2,42 +2,50 @@
   width: 100vw;
   height: 100%;
 }
-.hero-section {
-  position: relative;
-}
 
-.model-1 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
 .logo-wrapper {
+  animation: transformer 2s ease forwards;
   position: absolute;
-  top: 29%;
+  top: 28%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @keyframes transformer {
+    from {
+        transform: scale(0) rotate(180deg); 
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+  }
 }
+
 .logo {
   position: absolute;
   max-width: 47%;
 }
 .text-circle {
-  width: 78%;
+  width: 70%;
 }
 
-.text-circle {
-  animation: rotate 1s linear infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+.go-to-form {
+  position: absolute;
+  text-decoration: none;
+  width: 150px;
+  height: 190px;
+  top: 66%;
+  left: 5%;
+  background-image: url("../svgs/link.svg");
+  background-size: cover;
+  padding: 2rem 0 0 3.5rem;
+  color: var(--main-yellow);
+  -webkit-tap-highlight-color: transparent;
+
 }
-@keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
