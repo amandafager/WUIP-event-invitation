@@ -1,8 +1,17 @@
 
 .content-3 {
     position: absolute;
-    color: var(--main-yellow);
     bottom: -50%;
+    width: 100%;
+    color: var(--main-yellow);
+
+    @media (max-width: 340px) {
+      bottom: -55%;
+    }
+    @media (min-width: 600px) {
+      bottom: 0;
+      z-index: 8;
+    }
 
     .sign-up {
         display: flex;
@@ -11,17 +20,23 @@
         align-items: center;
 
         div {
-            width: 80%;
+            width: 70%;
             display: flex;
             flex-direction: column;
-            margin-bottom: 1rem;  
+            margin-bottom: 1rem;
+            @media (min-width: 600px) {
+              max-width: 280px;
+            }  
         
             label {
               padding: 0.4rem;
-              letter-spacing: 0.1rem;
+              letter-spacing: 0.03rem;
               @media (max-width: 300px) {
                 font-size: 12px;
               }
+              @media (min-width: 600px) {
+                letter-spacing: 0rem;
+              } 
               
             }
         
@@ -30,10 +45,14 @@
               background-color: transparent;
               outline: 0;
               border: 0;
-              letter-spacing: 0.1rem;
+              color: white;
+              letter-spacing: 0.06;
               @media (max-width: 300px) {
                 font-size: 12px;
               }
+              @media (min-width: 600px) {
+                letter-spacing: 0rem;
+              } 
               
               &::placeholder {
                 color: transparent;
@@ -60,31 +79,28 @@
 
 
   .blob-button {
-    background-image: url("../svgs/button.svg");
-    background-color: transparent;
+    background-color: var(--main-yellow);
     outline: none;
     background-size: cover;
-    width: 10rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
     color: var(--main-purple);
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: none;
     margin-top: 1rem;
     transition: all 0.5s ease;
-    
-    /*background: var(--main-yellow);
-    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;*/
 
     &:hover{
       transform: scale(1.1);
     }
 
     &:active {
-      transform: translateY(1rem);
-      /*filter: saturate(150%);*/
-   
+      transform: translateY(0.2rem);
+     
     }
+
   }
   
  

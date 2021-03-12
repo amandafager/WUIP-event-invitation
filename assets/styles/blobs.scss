@@ -1,13 +1,15 @@
 
-.blob-1.layer-1 {
+.blob-1 {
     position: absolute;
     top: -30%;
     right: 0;
-  }
-.blob-1.layer-2 {
-    position: absolute;
-    top: -28%;
-    right: 0;
+    /*height: 55%;
+   /* height: 70%; 
+    width: 140vw; */
+
+    @media (min-width: 600px) {
+        display: none;  
+    } 
 }
 
 .smoke-blobs {
@@ -16,40 +18,64 @@
     bottom: 75%;
     right: 8%;
     z-index: 2;
+    @media (min-width: 600px) {
+        width: 19%;
+        top: -23%;
+        left: 7%; 
+        transform: scaleX(-1);
+        z-index: 6;
+
+        #path_4, #path_5, #path_6 {
+            display: none;
+        }
+    }  
 }
 
-.blob-2.layer-1 {
+.blob-2 {
     position: absolute;
     top: 74%;
     right: 0;
-    z-index: 0;
-}
-.blob-2.layer-2 {
-    position: absolute;
-    top: 76%;
-    right: 0;
     z-index: 1;
+
+    #yellow-back-shadow-2 {
+        display: none;
+    }
+
+    @media (min-width: 600px) {
+        z-index: 5;
+        position: static;
+        transform: translateY(-34%);
+
+        #yellow-back-shadow {
+            display: none;
+        }
+        #yellow-back-shadow-2 {
+            display: flex;
+        }
+
+        
+    }
 }
+
 
 .blob-3 {
     position: absolute;
     bottom: -60%;
+    @media (min-width: 600px) {
+        z-index: 7;
+    }  
 }
-
-
-@media (max-width: 340px) {
-
-    .blob-3.layer-1 {
-        width: 100%;
-        height: calc(100% + 3.2rem);
+.blob-3.desktop { 
+    display: none; 
+    @media (min-width: 600px) {
+        display: flex;  
     }
-    .blob-3.layer-2 {
-        width: 100%;
-        height: calc(100% + 1rem);
-    
+}
+.blob-3.mobile { 
+    display: flex;
+    @media (min-width: 600px) {
+        display: none;  
     }   
 }
-
-
 
 

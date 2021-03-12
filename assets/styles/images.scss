@@ -1,0 +1,30 @@
+img {
+    width: 100%;
+    height: 100%;
+    /*display: block;*/
+
+  
+  }
+  
+@media screen and (min-width: 600px) {
+  .img-2, .img-3 {
+    display: none;
+  }    
+}
+
+.img-house-wrapper {
+  width: 40%;
+  position: absolute;
+  z-index: 6;
+  bottom: 30%;
+  left: 0;
+  display: block;
+
+  .img-house-desk {
+    object-fit: cover;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

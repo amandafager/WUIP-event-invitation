@@ -1,0 +1,31 @@
+section {
+    position: relative;
+}
+
+
+.hero-section { 
+    @media (min-width: 600px) {
+        z-index: 3; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  }
+}
+
+
+.main-content {
+    @media (min-width: 600px) {
+       display: flex;
+    } 
+}
+
+
+.section-sign-up {
+    @media (max-width: 600px) {
+     } 
+
+}
+
+
+
