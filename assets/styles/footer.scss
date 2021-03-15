@@ -5,17 +5,13 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /*position: absolute;*/
   background-color: var(--main-purple);
   padding: 60px 0 50px 0;
-  /*bottom: -24.5%;*/
+  margin-top: -1px;
 
-  @media (max-width: 340px) {
-    bottom: -26.5%;
-  }
   @media (min-width: 600px) {
     z-index: 3;
-    position: static;
+    position: relative;
   }
 }
 

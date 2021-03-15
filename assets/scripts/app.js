@@ -53,6 +53,14 @@ let urlParams = new URLSearchParams(window.location.search);
     name = "";
   }
       
-let nameDiv = document.querySelector(".name");
-nameDiv.textContent = name;
+let nameDiv = document.querySelectorAll(".guest-name");
+
+
+nameDiv.forEach(element => {
+  element.textContent = name;
+});
+
+
+  
+
 

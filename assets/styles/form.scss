@@ -1,16 +1,14 @@
 
 .content-3 {
-    position: absolute;
-    bottom: -50%;
+
+    background-color: var(--main-purple);
     width: 100%;
     color: var(--main-yellow);
 
-    @media (max-width: 340px) {
-      bottom: -55%;
-    }
     @media (min-width: 600px) {
       bottom: 0;
       z-index: 8;
+      padding-bottom: 5rem;
     }
 
     .sign-up {
@@ -18,6 +16,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 16px;
 
         div {
             width: 70%;
@@ -91,6 +90,7 @@
     border: none;
     margin-top: 1rem;
     transition: all 0.5s ease;
+    cursor: pointer;
 
     &:hover{
       transform: scale(1.1);

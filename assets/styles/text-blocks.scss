@@ -24,25 +24,32 @@
 @mixin p-style {
     width: 85%;
     line-height: 2rem;
+    font-size: 16px;
 
-    @media (max-width: 320px) {
-        font-size: 12px;
-        line-height: 1.5rem;
-    }
     @media (min-width: 600px) {
         max-width: 350px;
+        font-size: 18px;
     } 
 }
 
+.text-wrapper {
+    background: #fffe37;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+
 .text-content-1 {
     @include center-elements;
-    position: absolute;
+    padding-bottom: 2rem;
     z-index: 1;
-    top: -23%;
 
     @media (min-width: 600px) {
         z-index: 6;
-        top: -15%;
+        padding-bottom: 5rem;
     }
     
     h1 {
@@ -57,13 +64,11 @@
 
 .text-content-2 {
     @include center-elements;
-    position: absolute;
     z-index: 1;
-    top: 89%;
 
     @media (min-width: 600px) {
-        top: 20%;
         z-index: 6;
+        padding-bottom: 200px;
     }
 
     h2 {
@@ -86,10 +91,15 @@
     p {
         @include p-style;
         margin-bottom: 2rem;
+      
+    }
+}
 
-        @media (max-width: 300px) {
-            margin-bottom: 2rem;
-        } 
+.text-desk {
+    display: none;
+
+    @media (min-width: 600px) {
+        display: flex;
     }
 }
 

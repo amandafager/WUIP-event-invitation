@@ -12,19 +12,37 @@ img {
   }    
 }
 
-.img-house-wrapper {
-  width: 40%;
-  position: absolute;
-  z-index: 6;
-  bottom: 30%;
-  left: 0;
-  display: block;
 
-  .img-house-desk {
-    object-fit: cover;
+.container {
+  position: absolute ;
+  top: 350px;
+  left: -140px;
+  z-index: 4;
+  .img-house-wrapper {
+    width: 350px;
+    display: block;
+    position: relative;
+    @media (min-width: 1000px) {
+      width: 400px;
+    }
+    .img-house-desk {
+      object-fit: cover;
+    } 
   }
-
+  @media (min-width: 900px) {
+    left: -0px;
+  }
+  @media (min-width: 1000px) {
+    left: 0%;
+    top: 200px;
+  }
   @media (max-width: 600px) {
     display: none;
   }
+  
+
+}
+
+.img-smoke-wrapper {
+  position: relative;
 }
