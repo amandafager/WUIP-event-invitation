@@ -61,8 +61,14 @@ let urlParams = new URLSearchParams(window.location.search);
 
 let nameDiv = document.querySelectorAll(".guest-name");
 
+let nameForm = document.querySelector(".name input");
+let emailForm = document.querySelector(".email input");
+
+nameForm.value = name;
+emailForm.value = email;
+
 nameDiv.forEach(element => {
-  element.textContent = `${name}, ${email}`;
+  element.textContent = name;
 });
 
 
