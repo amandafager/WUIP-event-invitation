@@ -48,7 +48,7 @@
   text-decoration: none;
   width: 150px;
   height: 190px;
-  top: 66%;
+  bottom: 10%;
   left: 5%;
   background-image: url("../svgs/link.svg");
   background-size: cover;
@@ -56,6 +56,7 @@
   color: var(--main-yellow);
   -webkit-tap-highlight-color: transparent;
   font-weight: bold;
+  letter-spacing: 0.06rem;
   cursor: pointer;
 
   &:hover {

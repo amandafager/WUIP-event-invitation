@@ -45,22 +45,28 @@ window.addEventListener("scroll", () => {
 let urlParams = new URLSearchParams(window.location.search);
 
   let name;
+  let email;
 
   if(urlParams.has("name")){
     name = urlParams.get("name");
+    email = urlParams.get("email");
   }
   else{
     name = "";
+    email = "";
   }
-      
+
+
+  
+
 let nameDiv = document.querySelectorAll(".guest-name");
 
-
 nameDiv.forEach(element => {
-  element.textContent = name;
+  element.textContent = `${name}, ${email}`;
 });
 
 
   
 
 
+//?name=Amanda&email=amanda@gmail.com

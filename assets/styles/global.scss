@@ -25,6 +25,7 @@ body{
   position: relative;
   animation: inAnimation 7s ease;
   width: 100vw;
+  overflow-x: hidden;
  
 
   @keyframes inAnimation {

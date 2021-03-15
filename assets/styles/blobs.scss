@@ -89,8 +89,12 @@
         margin-bottom: -1px;
 
         svg {
-            height: 200px;
+            height: 150px;
             width: 100%;
+            @media (min-width: 600px) {
+                height: 200px;
+            }
+            
         }
     }
 
@@ -100,8 +104,11 @@
         margin-top: -1px;
 
         svg {
-            height: 200px;
+            height: 150px;
             width: 100%;
+            @media (min-width: 600px) {
+                height: 200px;
+            }
         }
     }     
 }
