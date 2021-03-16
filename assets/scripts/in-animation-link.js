@@ -1,5 +1,5 @@
 (function() {
-  
+    
     const link = document.querySelector('.go-to-form');
   
     function animateLink() {

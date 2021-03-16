@@ -1,4 +1,3 @@
-
 (function() {
   let elements;
   let windowHeight;
@@ -24,7 +23,6 @@
     for (let i = 0; i < elements.length; i++) {
       let element = elements[i];
       element.classList.remove('fade-in-element');
-      
     }
   }
 
