@@ -1,5 +1,5 @@
 .header {
-  
+  position: relative;
   width: 100vw;
   @media (min-width: 600px) {
     position: relative;
@@ -19,12 +19,8 @@
   align-items: center;
 
   @keyframes transformer {
-    from {
-        transform: scale(0) rotate(180deg); 
-    }
-    to {
-        transform: scale(1) rotate(360deg);
-    }
+    from { transform: scale(0) rotate(180deg); }
+    to { transform: scale(1) rotate(360deg); }
   }
 
   @media (min-width: 600px) {
@@ -43,12 +39,14 @@
   width: 70%;
 }
 
+
+
 .go-to-form {
   position: absolute;
   text-decoration: none;
   width: 150px;
   height: 190px;
-  bottom: 10%;
+  bottom: -10%;
   left: 5%;
   background-image: url("../svgs/link.svg");
   background-size: cover;
@@ -58,9 +56,14 @@
   font-weight: bold;
   letter-spacing: 0.06rem;
   cursor: pointer;
-
+  
   &:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 300px) {
+    height: 150px;
+    left: 0%;
   }
 
   @media (min-width: 600px) {
@@ -69,6 +72,36 @@
 
 }
 
+.resize-animation-stopper {
+  animation: none;
+  transition: none;
+}
 
+.normal-link {
+  bottom: 10%;
+  @media (min-width: 500px) {
+    bottom: 15%;
+  }
+}
 
+.animate-link {
+  animation: move-in 0.9s ease 1.4s forwards; 
+}
 
+@keyframes move-in {
+  from {
+    bottom: -10%; 
+  }
+  to { 
+    bottom: 10%; }
+}
+
+@media (min-width: 500px) {
+  @keyframes move-in {
+    from {
+      bottom: -10%; 
+    }
+    to { 
+      bottom: 15%; }
+  }
+}

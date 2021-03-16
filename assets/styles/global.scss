@@ -3,6 +3,24 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('/assets/fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --main-yellow: #ffff00;
   --main-purple: #8F39FB;
@@ -10,25 +28,28 @@
 
 html {
 	scroll-behavior: smooth;
+  
 }
-@media screen and (prefers-reduced-motion: reduce) {
+/*@media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
 	}
-}
-
+}*/
 
 body{
   background-color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   position: relative;
-  animation: inAnimation 7s ease;
+  animation: in-animation 7s ease;
   width: 100vw;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
  
 
-  @keyframes inAnimation {
+  @keyframes in-animation {
     from {
       opacity: 0;
     }
@@ -45,24 +66,7 @@ body{
 
 
 
-@keyframes fade-in {
-  from {opacity: 0; transform: scale(.7,.7)}
-  to {opacity: 1;}
-}
-.fade-in-element {
-animation: fade-in 1.4s;
-}
-.hidden {
-  opacity: 0;
-}
 
-
-.space {
-  height: 18vh;
-  @media (min-width: 600px) {
-    display: none;
-  }
-}
 
 
 

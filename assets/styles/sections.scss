@@ -1,10 +1,11 @@
 section {
-    position: relative;
+    position: relative;   
 }
 
 
 .hero-section { 
     @media (min-width: 600px) {
+        height: 100%;
         z-index: 3; 
         display: flex;
         flex-direction: column;
@@ -22,13 +23,11 @@ section {
 
 
 .section-sign-up {
- 
     @media (min-width: 600px) {
         display: flex;
         flex-direction: column;
         position: relative;
-     } 
-
+    } 
 }
 
 
