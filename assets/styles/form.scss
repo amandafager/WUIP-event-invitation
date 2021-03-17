@@ -52,17 +52,22 @@
               color: white;
               letter-spacing: 0.06;
 
-              &:focus + .stroke {
-                display: none;
-              }
-
               @media (max-width: 300px) {
                 font-size: 12px;
               }
               @media (min-width: 600px) {
                 letter-spacing: 0rem;
               } 
-              
+
+              &:focus + .stroke {
+                display: none;
+              }
+
+              &:not(:focus)  {
+                background-color: var(--main-purple);
+                transition: all 0.3s ease;  
+              }
+
               &::placeholder {
                 color: transparent;
                 transition: color 0.3s ease;
@@ -74,7 +79,10 @@
                 padding: 0.8rem;
                 transition: all 0.5s ease-in-out;
                 color: black;
+                &::placeholder {
+                color: black;
               }
+            }
 
               &:active {
                 &::placeholder {
@@ -89,11 +97,8 @@
               background-color: var(--main-yellow);
               border-radius: 1rem;
               box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
-              display: flex;
-              transition: all ease 1s;
+              /*transition: all ease-in-out 1s;*/
             }
-            
-      
         }  
     }
 }

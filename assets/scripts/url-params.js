@@ -12,18 +12,18 @@
       name = urlParams.get('name');
       email = urlParams.get('email');
       nameForTitle = name;
+      nameForm.value = name;
+      emailForm.value = email;
+      
+      
+      namesSpaceInTitle.forEach(element => {
+          element.textContent = nameForTitle;
+        });
     }
     else {
-      name = nameForm.placeholder;
-      email = emailForm.placeholder;;
-      nameForTitle = '';
+        name;
+        email;
+        nameForTitle = '';
     }
-  
-    nameForm.value = name;
-    emailForm.value = email;
     
-    namesSpaceInTitle.forEach(element => {
-      element.textContent = nameForTitle;
-    });
-  
 })();
