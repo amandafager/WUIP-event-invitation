@@ -8,8 +8,6 @@
   }
 }
 
-
-
 .logo-wrapper {
   animation: transformer 2s ease forwards;
   position: absolute;
@@ -42,24 +40,6 @@
   width: 70%;
 }
 
-
-.link {
-  min-width: 120px;
-  background-color: var(--main-purple);
-  color: var(--main-yellow);
-  position: absolute;
-  bottom: 25%;
-  text-align: center;
-  left: calc(100vw / 2 - 120px + 4rem / 2);
-  padding: 1rem 2rem 1rem 2rem;
-  font-weight: bold;
-  border-radius: 2rem;
-  text-transform: uppercase;
-  -webkit-tap-highlight-color: transparent;
-  text-decoration: underline;
-  text-underline-position: under;
-}
-
 .go-to-form {
   position: absolute;
   text-decoration: none;
@@ -90,11 +70,6 @@
     display: none;
   }
 
-}
-
-.resize-animation-stopper {
-  animation: none;
-  transition: none;
 }
 
 .normal-link {
