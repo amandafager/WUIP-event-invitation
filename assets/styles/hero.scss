@@ -71,7 +71,6 @@
   }
 
 }
-
 .normal-link {
   bottom: 10%;
   @media (min-width: 500px) {
@@ -80,23 +79,29 @@
 }
 
 .animate-link {
-  animation: move-in 0.9s ease 1.4s forwards; 
+  animation: move-in 1.6s ease 1s forwards; 
 }
 
 @keyframes move-in {
   from {
     bottom: -10%; 
+    transform: scale(0)
   }
   to { 
-    bottom: 10%; }
+    bottom: 10%;
+    transform: scale(1)
+  }
 }
 
 @media (min-width: 500px) {
   @keyframes move-in {
     from {
       bottom: -10%; 
+      transform: scale(0)
     }
     to { 
-      bottom: 15%; }
+      bottom: 15%; 
+      transform: scale(1)
+    }
   }
 }
