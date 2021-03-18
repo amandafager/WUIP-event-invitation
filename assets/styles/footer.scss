@@ -1,4 +1,3 @@
-
 footer {
   display: flex;
   flex-direction: column;
@@ -20,7 +19,6 @@ footer {
   z-index: 2;
   max-width: 100px;
   
-
   path {
     fill: var(--main-yellow);
   }
@@ -31,7 +29,6 @@ footer {
 }
 
 .socials {
-  //width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,12 +38,11 @@ footer {
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
-
+    
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
     }
-
-   } 
+  } 
 }

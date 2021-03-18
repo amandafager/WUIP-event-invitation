@@ -19,38 +19,43 @@
   z-index: -1;
   transition: left 0.5s ease; 
   height: 100%;
+  
   .img-smoke-wrapper-desk {
     width: 350px;
     display: block;
     position: relative;
+
     @media (min-width: 1025px) {
       width: 450px;
     }
+
     .img-house-desk {
       width: 100%;
       object-fit: cover;
     } 
   }
+
   @media (min-width: 750px) {
-    left: -70px;
-    
+    left: -70px; 
   }
+
   @media (min-width: 900px) {
     left: 0px;
     bottom: 43%;
   }
+
   @media (min-width: 1025px) {
     bottom: 55%;
   }
+
   @media (min-width: 1600px) {
     bottom: 50%;
     transform: translateX(-1px);
   }
+
   @media (max-width: 600px) {
     display: none;
   }
-  
-
 }
 
 .img-smoke-wrapper {
