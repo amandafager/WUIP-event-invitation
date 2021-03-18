@@ -16,7 +16,7 @@
     nameForTitle = name;
     nameForm.value = name;
     emailForm.value = email;
-    p.textContent = "Click on count me in to sign up!"
+    p.textContent = "Click on count me in to get on the list for Burkar och Beats!"
     
     namesSpaceInTitle.forEach(element => {
       element.textContent = nameForTitle;

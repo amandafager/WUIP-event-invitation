@@ -162,11 +162,11 @@
 
 .smoke-animation-desk {
   animation-name: fade-smoke;
-  animation-duration: 3s;
+  animation-duration: 1.7s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-timing-function: linear;
-  @include delay(animation, 3, 0.8s);
+  @include delay(animation, 3, 0.6s);
 }
 
 .smoke-animation-mobil {
