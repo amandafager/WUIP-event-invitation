@@ -79,7 +79,7 @@
 }
 
 .animate-link {
-  animation: move-in 1s ease-in-out 1s forwards; 
+  animation: move-in 1.3s ease-in-out 0.7s forwards; 
 }
 
 @keyframes move-in {
@@ -97,11 +97,13 @@
   @keyframes move-in {
     from {
       bottom: -10%; 
-      transform: scale(0)
+      transform: scale(0);
+      opacity: 0;
     }
     to { 
       bottom: 15%; 
-      transform: scale(1)
+      transform: scale(1);
+      opacity: 1;
     }
   }
 }
