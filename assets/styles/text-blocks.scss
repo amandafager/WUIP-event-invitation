@@ -53,7 +53,7 @@
     padding-bottom: 5rem;
   }
     
-  h1 {
+  h2 {
     @include title-style;
   }
 	
@@ -86,7 +86,7 @@
   @include center-elements;
   padding: 0 0 2rem 0; 
 	
-	h2 {
+	h3 {
     @include title-style;
     color: var(--main-yellow);
 		filter: drop-shadow(0px 0px 0.1px #000000); 
