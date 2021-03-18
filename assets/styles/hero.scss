@@ -31,12 +31,17 @@
 
 .logo-circle {
   width: 70%;
-  filter: drop-shadow(0px 0px 9px #000000); 
+  filter: drop-shadow(0px 0px 30px #000000); 
+  @media (min-width: 600px) {
+    filter: drop-shadow(0px 0px 14px #000000); 
+  }
+  
 }
 
 .go-to-form {
   position: absolute;
   text-decoration: none;
+  filter: drop-shadow(0px 0px 0.08px #000000); 
   width: 150px;
   height: 190px;
   bottom: -10%;
@@ -74,13 +79,13 @@
 }
 
 .animate-link {
-  animation: move-in 1s linear 1s forwards; 
+  animation: move-in 1s ease-in-out 1s forwards; 
 }
 
 @keyframes move-in {
   from {
     bottom: -10%; 
-    transform: scale(0)
+    transform: scale(0.4)
   }
   to { 
     bottom: 10%;
