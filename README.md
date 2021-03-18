@@ -1,5 +1,6 @@
 # WUIP-event-invitation
 
+
 ## Code Review
 
 - `images` to increase the site's speed index, you could try to make the images smaller since they take some time to load now. Lighthouse also suggested changing the filetype from PNG to JPEG.
