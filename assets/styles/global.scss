@@ -29,7 +29,8 @@
 html {
 	scroll-behavior: smooth;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
+  overflow-X: hidden; 
 }
 
 body{
@@ -39,9 +40,10 @@ body{
   position: relative;
   animation: in-animation 7s ease;
   width: 100vw;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
  
 

@@ -13,6 +13,7 @@ img {
 
 
 .container {
+  transform: translateX(-1px);
   position: absolute ;
   bottom: 40%; //350px;
   left: -120px;
@@ -40,6 +41,10 @@ img {
   }
   @media (min-width: 1025px) {
     bottom: 55%;
+  }
+  @media (min-width: 1600px) {
+    bottom: 50%;
+    transform: translateX(-1px);
   }
   @media (max-width: 600px) {
     display: none;
