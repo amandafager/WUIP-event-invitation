@@ -1,6 +1,6 @@
 # WUIP-event-invitation
 
-This is a collaborative project between me and a student from the school's IP Form & Graphics class. Our mission was to create a fictional event invitation that communicates with targeted visitors through multiple channels. We decided ourselves which company/organization to choose from and what kind of event to create. It needed to be a personalized printed invitation with a QR code that will lead to the unique landing page. We decided to to create this invitation for a reopening of Spike Brewery's Taproom, a place where visitors can eat, drink beer och listen to good music. Visit the landing page here: [burkar-och-beats-at-taproom.vercel.app](https://burkar-och-beats-at-taproom.vercel.app/)
+This is a collaborative project between me and a student from the school's IP Form & Graphics class. Our mission was to create a fictional event invitation that communicates with targeted visitors through multiple channels. We decided ourselves which company/organization to choose from and what kind of event to create. It needed to be a personalized printed invitation with a QR code that will lead to the unique landing page. We decided to to create an invitation for the reopening of Spike Brewery's Taproom, a place where visitors can eat, drink beer och listen to good music. Visit the landing page here: [burkar-och-beats-at-taproom.vercel.app](https://burkar-och-beats-at-taproom.vercel.app/)
 
 ## Code Review
 
