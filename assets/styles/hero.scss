@@ -1,6 +1,5 @@
 .header {
   position: relative;
-  width: 100%;
 
   @media (min-width: 600px) {
     position: relative;
@@ -13,14 +12,19 @@
   z-index: 1;
   top: 28%;
   width: 100%;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   @keyframes transformer {
-    from { transform: scale(0) rotate(180deg); }
-    to { transform: scale(1) rotate(360deg); }
+    from {
+      transform: scale(0) rotate(180deg);
+    }
+    to {
+      transform: scale(1) rotate(360deg);
+    }
   }
 
   @media (min-width: 600px) {
@@ -34,22 +38,22 @@ h1 {
 
   .logo-circle {
     filter: drop-shadow(0px 0px 30px #000000);
-     
+
     @media (min-width: 600px) {
-      filter: drop-shadow(0px 0px 14px #000000); 
-    } 
+      filter: drop-shadow(0px 0px 14px #000000);
+    }
   }
 }
 
 .go-to-form {
   position: absolute;
   text-decoration: none;
-  filter: drop-shadow(0px 0px 0.08px #000000); 
+  filter: drop-shadow(0px 0px 0.08px #000000);
   width: 150px;
   height: 190px;
   bottom: -10%;
   left: 5%;
-  background-image: url("../svgs/link.svg");
+  background-image: url('../svgs/link.svg');
   background-size: cover;
   padding: 2rem 0 0 3rem;
   color: var(--main-yellow);
@@ -58,7 +62,7 @@ h1 {
   letter-spacing: 0.06rem;
   cursor: pointer;
   text-transform: uppercase;
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -82,29 +86,29 @@ h1 {
 }
 
 .animate-link {
-  animation: move-in 1.3s ease-in-out 0.7s forwards; 
+  animation: move-in 1.3s ease-in-out 0.7s forwards;
 }
 
 @keyframes move-in {
   from {
-    bottom: -10%; 
-    transform: scale(0.4)
+    bottom: -10%;
+    transform: scale(0.4);
   }
-  to { 
+  to {
     bottom: 10%;
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
 @media (min-width: 500px) {
   @keyframes move-in {
     from {
-      bottom: -10%; 
+      bottom: -10%;
       transform: scale(0);
       opacity: 0;
     }
-    to { 
-      bottom: 15%; 
+    to {
+      bottom: 15%;
       transform: scale(1);
       opacity: 1;
     }

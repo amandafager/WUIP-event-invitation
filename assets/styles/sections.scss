@@ -1,26 +1,17 @@
 section {
-  position: relative; 
+  position: relative;
 }
 
-.hero-section { 
+.hero-section {
   width: 100%;
 
-	@media (min-width: 600px) {
-		height: 100%;
-		z-index: 3; 
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-  img {
-    width: 100%;
-    object-fit: cover;
-    
-		@media (min-width: 1800px) {
-      width: 100vw;
-    } 
+  @media (min-width: 600px) {
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -31,12 +22,9 @@ section {
 }
 
 .section-sign-up {
-	@media (min-width: 600px) {
+  @media (min-width: 600px) {
     display: flex;
     flex-direction: column;
     position: relative;
-  } 
+  }
 }
-
-
-
